@@ -11,7 +11,7 @@ const app = new Vue({
         messaggio2: 'PROVA A CLICCARE!!',
         miaclasse: '',
         miaclasse2: '',
-        immagine: 'JIMIHENDRIX.jpg'
+        immagine: 'assets/JIMIHENDRIX.jpg'
     },
     methods:{
         cambiaColoreGreen(){
@@ -39,6 +39,9 @@ const app = new Vue({
         cambiaColoreDefault(){
             this.miaclasse=''
             this.miaclasse2=''
+        },
+        classeInput(){
+            
         }
       
 

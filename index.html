@@ -15,16 +15,16 @@
      
             
       <h1 :class='miaclasse'>{{messaggio}} {{messaggio2}}</h1>
+      <input id="input" type="text" placeholder="scrivi la classe che vuoi" v-model='miaclasse.miaclasse2' @keyup.enter='classeInput'>
       <button @click='cambiaColoreGreen'>clicca e cambia colore in verde</button>
       <button @click='cambiaColoreRed'>clicca e cambia colore in rosso</button>
       <button @click='invertiColori'>clicca e inverti i colori</button>
       <button @click='cambiaColoreDefault'>clicca e torna al colore di default</button>
       <h1 :class='miaclasse2'>ECCO LA NOSTRA IMMAGINE</h1>
-      
-     
-
-      
-
+      <div>
+        <img :src="immagine" alt="">
+      </div>
+   
     </div>
 
     
